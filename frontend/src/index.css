@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/* ================================
+   BASE TYPOGRAPHY
+================================ */
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;               /* ↓ slightly smaller */
+  line-height: 1.6;
+  letter-spacing: -0.01em;       /* modern typography feel */
+  color: #0f172a;                /* slate-900 */
+  background-color: #f8fafc;     /* subtle off-white */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings – crisp & modern */
+h1, h2, h3, h4 {
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+/* ================================
+   GLASSMORPHISM
+================================ */
+
+.glass {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.72),
+    rgba(255, 255, 255, 0.55)
+  );
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 8px 24px rgba(15, 23, 42, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Dark Glass – premium dashboard cards */
+.glass-dark {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.85),
+    rgba(15, 23, 42, 0.65)
+  );
+  backdrop-filter: blur(18px) saturate(120%);
+  -webkit-backdrop-filter: blur(18px) saturate(120%);
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  color: #f8fafc;
+}
+
+/* ================================
+   SCROLLBAR (OPTIONAL BUT COOL)
+================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.25);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 23, 42, 0.4);
+}
+
+/* ================================
+   TRANSITIONS (GLOBAL FEEL)
+================================ */
+
+* {
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+* {
+  font-family: "Poppins", system-ui, sans-serif;
+}
